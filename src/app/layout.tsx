@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Playfair_Display } from "next/font/google";
+import { Montserrat, Playfair_Display, Outfit } from "next/font/google";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -12,6 +12,12 @@ const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
   weight: ["400", "700"],
+});
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -31,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className="scroll-smooth">
-      <body className={`${montserrat.variable} ${playfair.variable} font-sans antialiased text-text-dark`}>
+      <body className={`${montserrat.variable} ${playfair.variable} ${outfit.variable} font-sans antialiased text-text-dark`}>
         <Header />
         <main className="min-h-screen pt-[90px]">
           {children}
