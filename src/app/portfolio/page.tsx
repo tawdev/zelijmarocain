@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function Portfolio() {
     const projects = [
         {
-            title: "Patio Traditionnel",
-            location: "Fès, Maroc",
-            sector: "Résidentiel",
+            title: "Hotel Mamounia",
+            location: "Marrakech, Maroc",
+            sector: "Hôtellerie",
             focus: "Authenticité Clé-en-main",
             img: "/assets/images/zellige-tradition.jpg",
         },

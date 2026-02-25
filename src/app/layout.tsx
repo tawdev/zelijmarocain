@@ -29,6 +29,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PreFooter from "@/components/PreFooter";
 import FloatingButtons from "@/components/FloatingButtons";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function RootLayout({
   children,
@@ -45,6 +46,7 @@ export default function RootLayout({
         <PreFooter />
         <Footer />
         <FloatingButtons />
+        <SpeedInsights />
       </body>
     </html>
   );

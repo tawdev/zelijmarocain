@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import CollectionSlider from "@/components/CollectionSlider";
 
 export default function Collections() {
     const collections = [
@@ -54,13 +55,20 @@ export default function Collections() {
             ]
         },
         {
-            title: "Zellige Artisanal (Maâlem)",
-            desc: "Éditions limitées avec des techniques de cuisson lentes pour obtenir des accidents de couleurs magnifiques et exclusifs.",
-            img: "/assets/images/zellige-craft.png",
+            title: "Les Tables",
+            desc: "L'art de vivre à la marocaine. Nos tables en zellige combinent robustesse et élégance géométrique pour vos terrasses et intérieurs raffinés.",
+            images: [
+                "/assets/images/table1.png",
+                "/assets/images/table2.jpeg",
+                "/assets/images/table3.png",
+                "/assets/images/table4.png",
+                "/assets/images/table5.png",
+
+            ],
             specs: [
-                { label: "Authenticité", value: "100% Manuel" },
-                { label: "Exclusivité", value: "Série Limitée" },
-                { label: "Usage", value: "Projets d'Exception" },
+                { label: "Format", value: "Sur Mesure / Standard" },
+                { label: "Piétement", value: "Fer Forgé Artisanal" },
+                { label: "Usage", value: "Intérieur / Extérieur" },
             ]
         },
         {
@@ -76,11 +84,37 @@ export default function Collections() {
         {
             title: "Zellige Contemporain Nacre",
             desc: "La vibration du nacre pour une cuisine d'une pureté absolue. Des formats verticaux qui allongent l'espace et captent la lumière avec une élégance inédite.",
-            img: "/assets/images/nacre.jpg",
+            images: [
+                "/assets/images/nacre.jpg",
+                "/assets/images/nacre1.jpeg",
+                "/assets/images/nacre2.jpeg",
+                "/assets/images/nacre3.jpeg",
+                "/assets/images/nacre4.jpeg",
+                "/assets/images/nacre5.jpeg",
+                "/assets/images/nacre6.jpeg",
+                "/assets/images/nacre7.jpeg",
+            ],
             specs: [
                 { label: "Finition", value: "Nacre Brillante" },
                 { label: "Pose", value: "Verticale / Alignée" },
                 { label: "Usage", value: "Design Avant-gardiste" },
+            ]
+        },
+        {
+            title: "Zellige carre",
+            desc: "L'excellence du raffinement fassi. Des mosaïques complexes et des couleurs vibrantes pour des espaces qui racontent une histoire royale et séculaire.",
+            images: [
+                "/assets/images/care1.jpeg",
+                "/assets/images/care2.jpeg",
+                "/assets/images/care3.jpeg",
+                "/assets/images/care4.jpeg",
+                "/assets/images/care5.jpeg",
+
+            ],
+            specs: [
+                { label: "Complexité", value: "Chef-d'œuvre" },
+                { label: "Format", value: "Mosaïque Assemblée" },
+                { label: "Usage", value: "Palais / Résidences de Luxe" },
             ]
         },
     ];
@@ -114,12 +148,7 @@ export default function Collections() {
                         {collections.map((col, i) => (
                             <div key={i} className="group flex flex-col space-y-8">
                                 <div className="relative aspect-square overflow-hidden grayscale-[0.3] group-hover:grayscale-0 transition-all duration-1000">
-                                    <Image
-                                        src={col.img}
-                                        alt={col.title}
-                                        fill
-                                        className="object-cover transition-transform duration-1000 group-hover:scale-110"
-                                    />
+                                    <CollectionSlider images={col.images || [col.img]} title={col.title} />
                                 </div>
                                 <div className="flex flex-col flex-grow space-y-6">
                                     <div className="space-y-4">
@@ -147,7 +176,7 @@ export default function Collections() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section >
 
             <section className="section-padding bg-primary text-white overflow-hidden">
                 <div className="container relative z-10">

@@ -182,18 +182,18 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="lg:col-span-7 fadeIn stagger-1">
-              <div className="relative aspect-[16/10] overflow-hidden grayscale-[0.2] hover:grayscale-0 transition-all duration-1000">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-8 fadeIn stagger-1">
+              <div className="relative aspect-[16/9] overflow-hidden grayscale-[0.2] hover:grayscale-0 transition-all duration-1000">
                 <Image
-                  src="/assets/images/restaurant avec zelij marocain.jpg"
-                  alt="Hospitalité de Luxe"
+                  src="/assets/images/salle de bain.jpeg"
+                  alt="Salle de Bain d'Excellence"
                   fill
                   className="object-cover"
                 />
               </div>
             </div>
-            <div className="lg:col-span-4 lg:col-start-9 space-y-10 pb-12 fadeIn stagger-2">
+            <div className="lg:col-span-4 space-y-10 pb-12 fadeIn stagger-2">
               <span className="text-secondary uppercase tracking-[0.3em] text-xs font-semibold block">
                 Hospitalité
               </span>
