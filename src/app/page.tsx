@@ -89,7 +89,7 @@ export default function Home() {
             <div className="md:col-span-7 space-y-8">
               <div className="relative aspect-[16/9] overflow-hidden grayscale-[0.3] hover:grayscale-0 transition-all duration-1000">
                 <Image
-                  src="/assets/images/Zellige Classique .jpg"
+                  src="/assets/images/zellige_classique.jpg"
                   alt="Zellige Classique"
                   fill
                   className="object-cover"

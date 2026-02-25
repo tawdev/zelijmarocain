@@ -27,7 +27,7 @@ export default function Collections() {
         {
             title: "Zellige Géométrique",
             desc: "La précision mathématique du Maâlem. Étoiles et rosaces taillées à la main (Menkach) for des fresques monumentales.",
-            img: "/assets/images/Zellige Géométrique.jpg",
+            img: "/assets/images/zellige_geometrique.jpg",
             specs: [
                 { label: "Complexité", value: "Haute Précision" },
                 { label: "Format", value: "Sur Mesure (Mosaïque)" },
