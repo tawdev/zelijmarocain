@@ -3,7 +3,12 @@
 import { Mail, Phone, MapPin, Send, Truck } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Contactez Zlij Moroccan | Devis & Consultation Zellige",
+  description: "Prêt pour votre projet ? Contactez Zlij Moroccan à Marrakech pour des devis sur mesure, consultations techniques et solutions d'exportation internationale de zellige.",
+};
 export default function Contact() {
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
     const [formData, setFormData] = useState({

@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Nos Réalisations | Projets de Zellige à Marrakech, Rabat & Casablanca",
+  description: "Découvrez notre portfolio d'exception : de l'Hôtel La Mamounia aux villas privées. Réalisations de salles de bains royales, hammams et cuisines modernes en zellige marocain.",
+  keywords: ["Zellige La Mamounia", "Projet zellige Marrakech", "Hammam luxe Tanger", "Salle de bain zellige Rabat", "Décoration marocaine Casablanca"],
+};
 export default function Portfolio() {
     const projects = [
         {

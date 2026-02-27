@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Processus de Fabrication du Zellige | De l'Argile au Chef-d'œuvre",
+  description: "Découvrez les étapes ancestrales de notre fabrication : extraction de l'argile, séchage au soleil de Marrakech, émaillage traditionnel et taillage manuel au Menkach.",
+  keywords: ["Fabrication zellige Marrakech", "Cuisson traditionnelle zellige", "Argile de Fès", "Taillage Menkach", "Guebs zellige", "Email minéral"],
+};
 export default function Process() {
     const steps = [
         {

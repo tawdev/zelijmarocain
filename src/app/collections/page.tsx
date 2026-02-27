@@ -1,7 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import CollectionSlider from "@/components/CollectionSlider";
+import type { Metadata } from "next"; // Zid hada
 
+// 1. Metadata specifique l-Collections
+export const metadata: Metadata = {
+  title: "Collections de Zellige & Bejmat | Traditionnel & Contemporain",
+  description: "Explorez nos collections de zellige fait main : carreaux traditionnels de Fès, bejmat, mosaïques géométriques et tables d'exception. Plus de 50 nuances émaillées pour vos projets.",
+  keywords: ["Zellige traditionnel", "Bejmat Marrakech", "Zellige de Fès", "Mosaïque marocaine", "Tables en zellige", "Zellige monochrome"],
+};
 export default function Collections() {
     const collections = [
         {

@@ -1,7 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import { History, Leaf, Globe } from "lucide-react";
+import type { Metadata } from "next"; // Zid had l-import
 
+// 1. Zid had l-Metadata l-fo9 dyal l-composant
+export const metadata: Metadata = {
+  title: "Notre Histoire & Philosophie | Zlij Moroccan Marrakech",
+  description: "Découvrez l'âme de Zlij Moroccan à Marrakech. Entre savoir-faire ancestral des Maâlems et design moderne, nous créons des signatures architecturales pour villas d'exception.",
+  openGraph: {
+    title: "À Propos de Zlij Moroccan | L'Art du Zellige à Marrakech",
+    description: "Plus qu'un atelier, un observatoire de tendances où l'argile fusionne avec l'art.",
+  },
+};
 export default function About() {
     return (
         <>

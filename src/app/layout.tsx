@@ -1,7 +1,36 @@
 import type { Metadata } from "next";
 import { Montserrat, Playfair_Display, Outfit } from "next/font/google";
 import "./globals.css";
+import { GoogleAnalytics } from '@next/third-parties/google';
+// app/layout.tsx
 
+
+export const metadata: Metadata = {
+  title: {
+    default: "Zelij Marocain | Artisanat Traditionnel de Fès",
+    template: "%s | Zelij Marocain",
+  },
+  verification: {
+    google: "TON_CODE_ICI",
+  },
+  description: "Découvrez l'authentique Zelij Marocain fait main à Fès. Carreaux de céramique traditionnels pour cuisines, salles de bains et projets sur mesure.",
+  keywords: ["Zelij Marocain", "Zellige Fès", "Artisanat Marocain", "Carreaux traditionnels", "Moroccan Tiles"],
+  openGraph: {
+    title: "Zelij Marocain | Artisanat Traditionnel",
+    description: "Le meilleur du zellige marocain fait main.",
+    url: "https://zelijmarocain.com",
+    siteName: "Zelij Marocain",
+    images: [
+      {
+        url: "/logo-header.png", // Dir chi tswira mzyana f public folder
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
+};
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
@@ -20,10 +49,6 @@ const outfit = Outfit({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-export const metadata: Metadata = {
-  title: "Zlij Moroccan - L'Art du Zellige pour Villas, Appartements & Cafés Modernes",
-  description: "Sublimez vos villas, duplex et cafés modernes avec la touche authentique du zellige marocain. Zlij Moroccan : l'excellence de l'artisanat pour vos projets d'exception.",
-};
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -47,6 +72,7 @@ export default function RootLayout({
         <Footer />
         <FloatingButtons />
         <SpeedInsights />
+        <GoogleAnalytics gaId="G-DPKE0DXHC3" />
       </body>
     </html>
   );

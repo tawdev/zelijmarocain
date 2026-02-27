@@ -1,7 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Check } from "lucide-react";
+import type { Metadata } from "next"; // Zid hada
 
+// 1. Metadata specifique l-Sur Mesure
+export const metadata: Metadata = {
+  title: "Zellige Sur Mesure pour Architectes | Villas & Projets de Luxe",
+  description: "Solutions de zellige personnalisées pour villas, appartements et cafés modernes. Export international et accompagnement technique pour vos projets d'architecture les plus audacieux.",
+  keywords: ["Zellige sur mesure", "Architecture marocaine moderne", "Décoration café moderne", "Export zellige USA Europe", "Bejmat traditionnel"],
+};
 export default function Bespoke() {
     const sectors = [
         {

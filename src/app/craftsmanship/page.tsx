@@ -1,7 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Hammer, Scissors, LayoutGrid } from "lucide-react";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Savoir-faire Artisanal | Les Secrets du Zellige de Fès & Marrakech",
+  description: "Plongez dans l'art millénaire du zellige marocain. Découvrez les étapes de fabrication : du traçage géométrique au taillage manuel par nos maîtres Maâlems à Marrakech.",
+  keywords: ["Fabrication zellige", "Maâlem Maroc", "Géométrie sacrée zellige", "Menkach zellige", "Artisanat de Fès", "Zellige fait main"],
+};
 export default function Craftsmanship() {
     const steps = [
         {
