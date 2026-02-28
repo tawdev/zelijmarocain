@@ -10,8 +10,9 @@ export const metadata: Metadata = {
     default: "Zelij Marocain | Artisanat Traditionnel de Fès",
     template: "%s | Zelij Marocain",
   },
-  verification: {
-    google: "TON_CODE_ICI",
+  metadataBase: new URL('https://zelijmarocain.com'), // Darori f Next.js 14/15
+  alternates: {
+    canonical: '/',
   },
   description: "Découvrez l'authentique Zelij Marocain fait main à Fès. Carreaux de céramique traditionnels pour cuisines, salles de bains et projets sur mesure.",
   keywords: ["Zelij Marocain", "Zellige Fès", "Artisanat Marocain", "Carreaux traditionnels", "Moroccan Tiles"],
